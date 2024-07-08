@@ -1,0 +1,48 @@
+.bg-image {
+    background-image: url('../09/header/priscilla-du-preez-W3SEyZODn8U-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-shadow {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.none-opacity {
+    opacity: 1!important;
+}
+
+.image-container {
+     position: relative;
+}
+
+.image-container img {
+    display: block;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: inset -50px -230px 130px rgba(12, 8, 8, 0.7);
+}
+
+.hello {
+    position: relative;
+}
+
+.hello::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 205px;
+    bottom: 0;
+
+
+}
